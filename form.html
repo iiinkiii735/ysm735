@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Заповнити форму</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="form.html">Форма</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="anchors.html">Якорі</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Особиста інформація</legend>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="age">Вік:</label>
+                <input type="number" id="age" name="age" min="1" max="120" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Ваші відгуки</legend>
+                <label for="feedback">Відгук:</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Підписка</legend>
+                <label><input type="checkbox" name="subscribe" /> Підписатися на
+                    новини</label>
+            </fieldset>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </main>
+</body>
+
+</html>
